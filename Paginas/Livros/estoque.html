@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LivroTeka</title>
+    <link rel="icon" type="image/png" href="/Assets/Logo.png">
+</head>
+
+<body>
+    <a href="../../Paginas/home.html"><img src="../../Assets/Logo.png" width="20"></a>
+    <h1>Estoque</h1>
+    <a href="index.html">Voltar</a>
+
+    <form action="index.html" method="get">
+        <div>
+            <label for="campo-nome">Nome</label>
+            <input type="text" id="campo-nome" name="nome" required>
+        </div>
+        <div>
+            <label for="campo-genero">Gênero</label>
+            <select name="genero" id="campo-genero">
+                <option value="1">Negócios</option>
+                <option value="2">Autoajuda</option>
+                <option value="3">Empreendedorismo</option>
+                <option value="4">Desenvolvimento Pessoal</option>
+                <option value="5">Manual Técnico</option>
+                <option value="6">Intrucional</option>
+            </select>
+        </div>
+        <div>
+            <label for="campo-quantidade">Quantidade</label>
+            <input type="number" name="quantidade" id="campo-quantidade" required>
+        </div>
+        <div>
+            <label for="campo-editora">Editora</label>
+            <select name="editora" id="campo-editora">
+                <option value="1">Atlas</option>
+                <option value="2">Rocco</option>
+                <option value="3">Sextante</option>
+            </select>
+        </div>
+        <button type="submit">Lançar</button>
+    </form>
+</body>
+</html>

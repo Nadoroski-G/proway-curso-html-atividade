@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LivroTeka</title>
+    <link rel="icon" type="image/png" href="/Assets/Logo.png">
+</head>
+<body>
+    <a href="../../Paginas/home.html"><img src="../../Assets/Logo.png" width="20"></a>
+    <h1>Cadastro de Livros</h1>
+    <a href="index.html">Voltar</a>
+    
+    <form action="index.html" method="get">
+        <div>
+            <label for="campo-nome">Nome</label>
+            <input type="text" id="campo-nome" required minlength="3" name="Nome">
+        </div>
+        <div>
+            <label for="campo-escritor">Escritor</label>
+            <input type="text" name="Escritor" id="campo-escritor" required minlength="3">
+        </div>
+        <div>
+            <label for="campo-editora">Editora</label>
+            <input type="text" name="Editora" id="campo-editora" required minlength="3">
+        </div>
+        <div>
+            <label for="campo-sinopse">Sinopse</label>
+            <textarea name="Sinopse" id="campo-sinopse" cols="60" rows="5"></textarea>
+        </div>
+        <div>
+            <label for="campo-genero">Gênero</label>
+            <input type="text" id="campo-genero" name="Genero" required minlength="1">
+        </div>
+        <div>
+            <label for="campo-preco">Preço</label>
+            <input type="number" name="Preco" id="campo-preco" required step=".01">
+        </div>
+        <button type="submit">Cadastrar </button>
+    </form>
+</body>
+</html>

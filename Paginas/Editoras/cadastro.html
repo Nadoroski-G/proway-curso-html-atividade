@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LivroTeka</title>
+    <link rel="icon" type="image/png" href="/Assets/Logo.png">
+</head>
+
+<body>
+    <a href="../../Paginas/home.html"><img src="../../Assets/Logo.png" width="20"></a>
+    <h1>Cadastro de Autores</h1>
+    <a href="index.html">Voltar</a>
+
+    <form action="index.html" method="get">
+        <div>
+            <label for="campo-nome">Nome</label>
+            <input type="text" id="campo-nome" required name="Nome" minlength="3">
+        </div>
+        <div>
+            <label for="campo-endereco">Endereço</label>
+            <textarea name="Endereço" id="campo-endereco" cols="60" rows="5"></textarea>
+        </div>
+        <div>
+            <label for="campo-cnpj">CNPJ</label>
+            <input type="text" id="campo-cnpj" name="cnpj" required maxlength="14" minlength="14">
+        </div>
+        <div>
+            <label for="campo-telefone">Telefone</label>
+            <input type="text" id="campo-telefone" name="Telefone" required>
+        </div>
+        <div>
+            <label for="campo-email">E-mail</label>
+            <input type="text" id="campo-email" name="Email" required>
+        </div>
+    </form>
+    <button type="submit">Cadastrar</button>
+</body>
+</html>
