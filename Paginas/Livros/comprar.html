@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LivroTeka</title>
+    <link rel="icon" type="image/png" href="../../Assets/Logo.png">
+</head>
+<body>
+    <a href="../../Paginas/home.html"><img src="../../Assets/Logo.png" width="20"></a>
+    <h1>Cadastro de Livros</h1>
+    <a href="index.html">Voltar</a>
+    
+    <form action="index.html" method="get">
+        <div>
+            <label for="campo-livro">Nome do livro</label>
+            <input type="text" id="campo-livro" name="livro" required>
+        </div>
+        <div>
+            <label for="campo-cliente">Nome do Cliente</label>
+            <input type="text" id="campo-cliente" name="cliente" required>
+        </div>
+        <div>
+            <label for="campo-cpf">CPF</label>
+            <input type="text" id="campo-cpf" name="cpf" required minlength="11" maxlength="11">
+        </div>
+        <div>
+            <label for="campo-lagradouro">Lagradouro</label>
+            <input type="text" id="campo-lagradouro" name="lagradouro" required>
+        </div>
+        <div>
+            <label for="campo-cidade">Cidade</label>
+            <input list="cidade" name="cidade" id="campo-cidade" required>
+            <datalist id="cidade">
+                <option value="Blumenau">Blumenau</option>
+                <option value="Florianópolis">Florianópolis</option>
+                <option value="Curitiba">Curitiba</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+            </datalist>
+        </div>
+        <div>
+            <label for="campo-estado">Estado</label>
+            <input list="estado" name="estado" id="campo-estado"  required>
+            <datalist id="estado">
+                <option value="SC">SC</option>
+                <option value="PR">PR</option>
+                <option value="SP">SP</option>
+                <option value="RJ">RJ</option>
+            </datalist>
+        </div>
+        <div>
+            <label for="campo-horario">Entregar em horario comercial?</label>
+            <div>
+                <input type="radio" name="importado" id="select-yes" required value="True">
+                <label for="select-yes">Yes</label>
+                <input type="radio" name="importado" id="select-no" required value="False">
+                <label for="select-no">No</label>
+                <div>
+                    <label for="campo-hora">Horario de entrega</label>
+                    <input type="time" name="hora" id="campo-hora" required>
+                    <label>Escolha um horario entre <time>9:00</time> e <time>21:00.</time></label>
+                </div>
+            </div>
+        </div>
+        <div>
+            <label for="campo-data">Dia de entrega:</label>
+            <input type="date" name="data" id="campo-data" required>
+        </div>
+        <div>
+            <label for="campo-complemento">Complemento</label>
+            <textarea name="complemento" id="campo-complemento" cols="60" rows="3"></textarea>
+        </div>
+        <div>
+            <label for="campo-pagamento">Forma de Pagamento:</label>
+            <select name="pagamento" id="campo-pagamento">
+                <option value="1">Débito</option>
+                <option value="2">Crédito</option>
+                <option value="3">Pix</option>
+                <option value="4">Boleto</option>
+            </select>
+        </div>
+        <button type="submit"><i class="fa-solid fa-coins"></i>Comprar</button>   
+    </form>
+    <script src="https://kit.fontawesome.com/1eb82afb15.js" crossorigin="anonymous"></script>
+</body>
+</html>
